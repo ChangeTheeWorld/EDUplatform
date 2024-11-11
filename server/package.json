@@ -10,11 +10,15 @@
   "license": "MIT",
   "description": "The express typescript backend for the ChangeTheWorld EDU platform.",
   "dependencies": {
-    "express": "^4.21.1"
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.0",
     "@types/node": "^22.9.0",
+    "@types/pg": "^8.11.10",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
