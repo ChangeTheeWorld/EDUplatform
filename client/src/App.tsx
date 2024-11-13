@@ -1,11 +1,20 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Opensource from './pages/Opensource';
+
+
 function App() {
   return (
-    <>
-      <div className="w-full min-h-screen flex justify-center items-center flex-col">
-        <h1 className="text-6xl font-bold tracking-widest border-8 border-black p-24">EDUPLATFORM</h1>
-        <h2 className="my-12 text-3xl font-semibold tracking-wider">The best free alternativ to learning</h2>
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/opensource" element={<Opensource />} />
+      </Routes>
+    </Router>
   )
 }
 
